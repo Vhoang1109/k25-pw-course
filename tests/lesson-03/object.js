@@ -19,11 +19,11 @@ let student = {
 };
 
 //Truy xuat thuoc tinh cua doi tuong
-// console.log(`Student: ${student}`);
-// console.log(`Student name: ${student.name}`);
-// console.log(`Student name: ${student.address.street}`);
+console.log(`Student: `, student);
+console.log(`Student name: ${student.name}`);
+console.log(`Student name: ${student.address.street}`);
 
-// co te dung ngoac vuong
+// co the dung ngoac vuong
 console.log(`Student name: ${student["name"]}`);
 console.log(`Student street: ${student["address"]["street"]}`);
 console.log(`Student class: ${student["class"]}`);
