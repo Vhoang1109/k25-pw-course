@@ -21,11 +21,8 @@ function caculate(a, b) {
 const total = caculate(5, 6);
 console.log(total);
 
-
-
 //mang 
 let studentArr = ["han", "yen", "trang","my","linh"]
-
 
                     // truyen
 function printArrChar(studentArr) {
