@@ -1,0 +1,32 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://material.playwrightvn.com/01-xpath-register-page.html');
+  await page.getByRole('textbox', { name: 'Username:' }).click();
+  await page.getByRole('textbox', { name: 'Username:' }).fill('Pham Viet Hoang');
+  await page.getByRole('textbox', { name: 'Email:' }).click();
+  await page.getByRole('textbox', { name: 'Email:' }).fill('hoang1109@gmail.com');
+  await page.getByRole('radio', { name: 'Male', exact: true }).check();
+  await page.getByRole('checkbox', { name: 'Reading' }).check();
+  await page.getByLabel('Interests:').selectOption('technology');
+  await page.getByRole('textbox', { name: 'Date of Birth:' }).fill('2026-06-11');
+  await page.getByRole('button', { name: 'Profile Picture:' }).click();
+  await page.getByRole('textbox', { name: 'Biography:' }).click();
+  await page.getByRole('textbox', { name: 'Biography:' }).fill('test');
+  await page.getByRole('slider', { name: 'Rate Us:' }).fill('9');
+  await page.getByText('#ff0000').click();
+  await page.locator('#favcolor').dblclick();
+  await page.locator('#favcolor').fill('#12a4e2');
+  await page.getByRole('checkbox', { name: 'Subscribe' }).check();
+  await page.getByRole('checkbox', { name: 'Subscribe' }).uncheck();
+  await page.getByRole('checkbox', { name: 'Subscribe' }).check();
+  await page.getByRole('checkbox', { name: 'Subscribe' }).dblclick();
+  await page.getByText('Hover over me Subscribe to').click();
+  await page.locator('span').nth(3).click();
+  await page.locator('#starRating').click();
+  await page.locator('#starRating').click();
+  await page.locator('#starRating').click();
+  await page.locator('#starRating').click();
+  await page.locator('#starRating').click();
+  await page.getByRole('button', { name: 'Register' }).click();
+});
