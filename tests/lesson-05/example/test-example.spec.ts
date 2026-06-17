@@ -46,7 +46,7 @@ test("Test 02", async ({ page }) => {
         });
     });
 
-    await test.step("Right  click", async () => {
+    await test.step("Right click", async () => {
 
         await page.locator("//div[@id='clickArea']").click({
             button: "right"

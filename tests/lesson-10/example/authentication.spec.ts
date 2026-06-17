@@ -15,7 +15,6 @@ test.describe("AUTH", () => {
     test("Login pass", async ({ page }) => {
         // khai bao login-page dung tuong tu nhu syntax khai bao class dc hoc bai truoc
 
-
         await test.step("Navigate to login page", async () => {
             await loginPage.navigateToLoginPage();
         });

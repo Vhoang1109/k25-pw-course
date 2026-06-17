@@ -7,7 +7,7 @@ await page.click("//a[@href='03-xpath-todo-list.html']");
 await page.locator("//input[@id='new-task']").fill("Task 01");
 await page.click("//button[@id='add-task']");
 
-page.on('dialog', dialog => dialog.accept());
+page.on('dialog', async dialog => dialog.accept());
 await page.click("//button[text()='Delete']");
 });
 
